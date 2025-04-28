@@ -40,7 +40,7 @@ EOF
 # MySQL 서버 및 개발 라이브러리 설치
 echo "MySQL 서버 및 개발 패키지 설치 중..."
 dnf module disable mysql -y || true
-dnf install -y mysql-community-server mysql-community-devel gcc python3-devel --nogpgcheck
+dnf install -y mysql-community-server mysql-community-devel gcc python3-devel python3-pip --nogpgcheck
 
 # 비밀번호 정책 설정
 echo "MySQL 설정 파일 생성 중..."
